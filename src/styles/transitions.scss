@@ -1,0 +1,138 @@
+/* Sidebar transitions*/
+.fadeup-enter,
+.fadeup-appear {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.fadeup-enter-active,
+.fadeup-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1300ms ease 900ms;
+}
+
+.fadein-enter,
+.fadein-appear {
+  opacity: 0;
+}
+.fadein-enter-active,
+.fadein-appear-active {
+  opacity: 1;
+  transition: all 1300ms ease 900ms;
+}
+
+/* scroll */
+
+.fadeup-scroll-enter,
+.fadeup-scroll-appear {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.fadeup-scroll-enter-active,
+.fadeup-scroll-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 700ms ease 0ms;
+}
+
+.fadeup-scroll-projects-enter,
+.fadeup-scroll-projects-appear {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.fadeup-scroll-projects-enter-active,
+.fadeup-scroll-projects-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 700ms ease 200ms;
+}
+
+/* Navbar transitions*/
+.fadedown-enter,
+.fadedown-appear {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.fadedown-enter-active,
+.fadedown-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 700ms ease 150ms;
+}
+
+/* Welcome transitions*/
+.fadeup-hey-enter,
+.fadeup-hey-appear {
+  opacity: 0;
+  transform: translateY(70px);
+}
+.fadeup-hey-enter-active,
+.fadeup-hey-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 500ms ease 500ms;
+}
+
+.fadeup-name-enter,
+.fadeup-name-appear {
+  opacity: 0;
+  transform: translateY(70px);
+}
+.fadeup-name-enter-active,
+.fadeup-name-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 500ms ease 550ms;
+}
+
+.fadeup-desc-enter,
+.fadeup-desc-appear {
+  opacity: 0;
+  transform: translateY(70px);
+}
+.fadeup-desc-enter-active,
+.fadeup-desc-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 500ms ease 600ms;
+}
+
+.fadeup-contact-enter,
+.fadeup-contact-appear {
+  opacity: 0;
+  transform: translateY(70px);
+}
+.fadeup-contact-enter-active,
+.fadeup-contact-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 500ms ease 650ms;
+}
+
+.fade-arrow-enter,
+.fade-arrow-appear {
+  opacity: 0;
+}
+.fade-arrow-enter-active,
+.fade-arrow-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms ease 2500ms;
+}
+
+@media only screen and (max-width: 615px) {
+  //speeds up the animation for mobie
+
+  /* scroll */
+  .fadeup-scroll-enter,
+  .fadeup-scroll-appear {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  .fadeup-scroll-enter-active,
+  .fadeup-scroll-appear-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 300ms ease 0ms;
+  }
+}
