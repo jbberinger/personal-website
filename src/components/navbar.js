@@ -1,6 +1,6 @@
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
-import resume from './resume/Justin_Beringer_Resume.pdf'
+import resume from './resume/Justin_Beringer_resume.pdf'
 
 const NavBar = ({ mounted, scrollPosition, navLinkHandler }) =>
   <CSSTransition timeout={3000} classNames="fadedown" in={mounted}>
