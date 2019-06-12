@@ -21,7 +21,7 @@ const ProjectsSection = ({ isVisible }) =>
             <div className="project-content-right">
               <div className="project-text-right">
                 <h3>Markdown Previewer</h3>
-                <h4>JavaScript / React / Scss  / Marked.js</h4>
+                <h4>JavaScript / React / SCSS  / Marked.js</h4>
                 <div className="condensed" id="project-1">
                   <article className="project-description-right">
                     A web application for previewing github flavoured markdown using the Marked.js parser.
