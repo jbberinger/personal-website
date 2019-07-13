@@ -194,8 +194,7 @@ button:hover {
   @include flexbox(column);
   max-width: 1000px;
   padding-top: 25px;
-  padding-left: auto;
-  padding-right: auto;
+  margin: auto;
   height: 100vh;
   min-height: 700px;
 }

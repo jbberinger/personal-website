@@ -3,10 +3,11 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import github from './icons/github.svg';
 import codepen from './icons/codepen.svg';
 import glitch from './icons/glitch.svg';
-import youtube from './icons/youtube.svg';
+import link from './icons/link.svg';
+import globe from './icons/globe.svg';
+import visualbarbell from './images/VisualBarbell.png'
 import markdown from './images/MarkdownApp.png';
 import urlshortener from './images/urlshortener.png';
-import powerlifting from './images/PowerliftingApp.png';
 import snake from './images/SnakeApp.png';
 
 const ProjectsSection = ({ isVisible }) =>
@@ -17,47 +18,46 @@ const ProjectsSection = ({ isVisible }) =>
         <CSSTransition appear={true} timeout={1600} classNames="fadeup-scroll-projects" in={isVisible.first} key="1">
           <div>
             <div className="section-title-container"><h2 className="section-title">Projects</h2><span className="line" /></div>
-            {/* Markdown Previewer */}
             <div className="project-content-right">
               <div className="project-text-right">
-                <h3>Markdown Previewer</h3>
-                <h4>JavaScript / React / SCSS  / Marked.js</h4>
-                <div className="condensed" id="project-1">
+                <h3>Visual Barbell</h3>
+                <h4>React / TypeScript / SCSS </h4>
+                <div className="condensed" id="project-2">
                   <article className="project-description-right">
-                    A web application for previewing github flavoured markdown using the Marked.js parser.
+                    A modern mobile-first web application for visualizing and calculating barbell weights.
                   </article>
                 </div>
                 <div className="project-buttons-right">
-                  <a href="https://codepen.io/jbberinger/full/dLKdBP" target="_blank" rel="noopener noreferrer"><img src={codepen} className="project-icon-left" alt="codepen icon" /></a>
+                  <a href="https://VisualBarbell.com" target="_blank" rel="noopener noreferrer"><img src={globe} className="project-icon-right" alt="Visual Barbell website link" /></a>
+                  <a href="https://github.com/jbberinger/visual-barbell-calculator" target="_blank" rel="noopener noreferrer"><img src={github} className="project-icon-right" alt="github icon" /></a>
                 </div>
               </div>
               <div className="project-img-container">
-                <img className="project-img" src={markdown} alt="markdown previewer app screenshot" />
+                <img className="project-img" src={visualbarbell} alt="url shortener app screenshot" />
               </div>
             </div>
           </div>
         </CSSTransition>
       }
 
+      {/* Markdown Previewer */}
       {isVisible.second &&
         <CSSTransition appear={true} timeout={1600} classNames="fadeup-scroll-projects" in={isVisible.second} key="2">
           <div>
-            {/* URL Shortener App */}
             <div className="project-content-left">
               <div className="project-img-container">
-                <img className="project-img" src={urlshortener} alt="url shortener app screenshot" />
+                <img className="project-img" src={markdown} alt="markdown previewer app screenshot" />
               </div>
               <div className="project-text-left">
-                <h3>URL Shortener API</h3>
-                <h4>JavaScript / Node.js / Express.js / MongoDB</h4>
-                <div className="condensed" id="project-2">
+                <h3>Markdown Previewer</h3>
+                <h4>JavaScript / React / SCSS / Marked.js</h4>
+                <div className="condensed" id="project-1">
                   <article className="project-description-left">
-                    A microservice for shortening URLs using MongoDB and a RESTful API.
+                    A web application for previewing github flavoured markdown using the Marked.js parser.
                   </article>
                 </div>
                 <div className="project-buttons-left">
-                  <a href="https://github.com/jbberinger/URL-Shortener-API" target="_blank" rel="noopener noreferrer"><img src={github} className="project-icon-left" alt="github icon" /></a>
-                  <a href="https://turquoise-timer.glitch.me/" target="_blank" rel="noopener noreferrer"><img src={glitch} className="project-icon-left" alt="youtube icon" /></a>
+                  <a href="https://codepen.io/jbberinger/full/dLKdBP" target="_blank" rel="noopener noreferrer"><img src={codepen} className="project-icon-left" alt="codepen icon" /></a>
                 </div>
               </div>
             </div>
@@ -65,10 +65,36 @@ const ProjectsSection = ({ isVisible }) =>
         </CSSTransition>
       }
 
+      {/* URL Shortener App */}
       {isVisible.third &&
         <CSSTransition appear={true} timeout={1600} classNames="fadeup-scroll-projects" in={isVisible.third} key="3">
           <div>
-            {/* Powerlifting App */}
+            <div className="project-content-right">
+              <div className="project-text-right">
+                <h3>URL Shortener API</h3>
+                <h4>JavaScript / Node.js / Express.js / MongoDB</h4>
+                <div className="condensed" id="project-2">
+                  <article className="project-description-right">
+                    A microservice for shortening URLs using MongoDB and a RESTful API.
+                  </article>
+                </div>
+                <div className="project-buttons-right">
+                  <a href="https://github.com/jbberinger/URL-Shortener-API" target="_blank" rel="noopener noreferrer"><img src={github} className="project-icon-right" alt="github icon" /></a>
+                  <a href="https://turquoise-timer.glitch.me/" target="_blank" rel="noopener noreferrer"><img src={glitch} className="project-icon-right" alt="youtube icon" /></a>
+                </div>
+              </div>
+              <div className="project-img-container">
+                <img className="project-img" src={urlshortener} alt="url shortener app screenshot" />
+              </div>
+            </div>
+          </div>
+        </CSSTransition>
+      }
+
+      {/* Powerlifting App */}
+      {/* {isVisible.third &&
+        <CSSTransition appear={true} timeout={1600} classNames="fadeup-scroll-projects" in={isVisible.third} key="3">
+          <div>
             <div className="project-content-right">
               <div className="project-text-right">
                 <h3>Powerlifting App</h3>
@@ -89,12 +115,12 @@ const ProjectsSection = ({ isVisible }) =>
             </div>
           </div>
         </CSSTransition>
-      }
+      } */}
 
+      {/* Snake Game */}
       {isVisible.fourth &&
         <CSSTransition appear={true} timeout={1600} classNames="fadeup-scroll-projects" in={isVisible.fourth} key="4">
           <div>
-            {/* Snake Game */}
             <div className="project-content-left">
               <div className="project-img-container">
                 <img className="project-img" src={snake} alt="snake game screenshot" />
