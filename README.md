@@ -4,5 +4,5 @@
 
 Built with:
 - [React](https://reactjs.org/)
-- [Scss](https://sass-lang.com/)
+- [SCSS](https://sass-lang.com/)
 - [React Transition Group](http://reactcommunity.org/react-transition-group/)
