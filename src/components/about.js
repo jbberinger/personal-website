@@ -17,7 +17,7 @@ const AboutSection = ({ isVisible }) =>
                   <p>Here are some of the languages and technologies I've worked with:</p>
                 </div>
                 <ul className="about-list">
-                  {['JavaScript (ES6)', 'HTML5 and SCSS', 'React', 'MongoDB', 'Express.js', 'Socket.io', 'Java', 'C', 'C#', 'Python'].map(e => <li>{e}</li>)}
+                  {['JavaScript (ES6)', 'HTML5 and SCSS', 'React', 'TypeScript', 'MongoDB', 'Express.js', 'Java', 'C', 'C#', 'Python'].map(e => <li>{e}</li>)}
                 </ul>
               </div>
               <div className="about-img-container">

@@ -3,7 +3,6 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import github from './icons/github.svg';
 import codepen from './icons/codepen.svg';
 import glitch from './icons/glitch.svg';
-import link from './icons/link.svg';
 import globe from './icons/globe.svg';
 import visualbarbell from './images/VisualBarbell.png'
 import markdown from './images/MarkdownApp.png';
@@ -22,9 +21,9 @@ const ProjectsSection = ({ isVisible }) =>
               <div className="project-text-right">
                 <h3>Visual Barbell</h3>
                 <h4>React / TypeScript / SCSS </h4>
-                <div className="condensed" id="project-2">
+                <div className="condensed" id="project-1">
                   <article className="project-description-right">
-                    A modern mobile-first web application for visualizing and calculating barbell weights.
+                    A modern mobile-first web app for visualizing and calculating barbell weights.
                   </article>
                 </div>
                 <div className="project-buttons-right">
@@ -51,7 +50,7 @@ const ProjectsSection = ({ isVisible }) =>
               <div className="project-text-left">
                 <h3>Markdown Previewer</h3>
                 <h4>JavaScript / React / SCSS / Marked.js</h4>
-                <div className="condensed" id="project-1">
+                <div className="condensed" id="project-2">
                   <article className="project-description-left">
                     A web application for previewing github flavoured markdown using the Marked.js parser.
                   </article>
@@ -73,7 +72,7 @@ const ProjectsSection = ({ isVisible }) =>
               <div className="project-text-right">
                 <h3>URL Shortener API</h3>
                 <h4>JavaScript / Node.js / Express.js / MongoDB</h4>
-                <div className="condensed" id="project-2">
+                <div className="condensed" id="project-3">
                   <article className="project-description-right">
                     A microservice for shortening URLs using MongoDB and a RESTful API.
                   </article>
